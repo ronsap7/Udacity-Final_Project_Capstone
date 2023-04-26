@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  href="src/client/styles/styles.scss">
+    <link rel="icon" href="/src/client/views/favicon.ico" type="image/x-icon" />
+    <title>Travel App</title>
+</head>
+<body>
+    <header>
+        <h1>Travel App</h1>
+    </header>
+    <main>
+        <section id="search-form">
+            <h2>Plan Your Trip</h2>
+            <form>
+                <label for="destination">Destination:</label>
+                <input type="text" id="destination" name="destination" placeholder="Enter city name" required>
+                
+                <label for="departure-date">Departure Date:</label>
+                <input type="date" id="departure-date" name="departure-date" required>
+                
+                <label for="return-date">Return Date:</label>
+                <input type="date" id="return-date" name="return-date" required>
+                
+                <button type="submit" id="submit-btn">Get Trip Info</button>
+            </form>
+        </section>
+        <section id="trip-info">
+            <h2>Your Trip Details</h2>
+            <div id="trip-details">
+                <!-- Trip details will be displayed here -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Travel App. All rights reserved.</p>
+    </footer>
+    <script type="text/javascript" src="bundle.js"></script>
+</body>
+</html>
