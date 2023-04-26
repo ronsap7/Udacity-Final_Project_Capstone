@@ -61,6 +61,7 @@ module.exports = {
         { from: 'service-worker.js', to: 'service-worker.js' },
       ],
     }),
+    new CleanWebpackPlugin(),
     new WriteFilePlugin(),
   ],
   devServer: {
