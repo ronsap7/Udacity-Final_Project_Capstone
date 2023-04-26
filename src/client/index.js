@@ -1,5 +1,5 @@
 import './styles/style.scss';
-import { fetchData } from './js/app';
+import { fetchData } from './js/app.js';
 
 
 const initializeApp = () => {
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', initializeApp);
 
 if ("serviceWorker" in navigator) {
     navigator.serviceWorker
-      .register("/service-worker.js")
+      .register("service-worker.js")
       .then((registration) => {
         console.log("Service Worker registered successfully:", registration);
       })

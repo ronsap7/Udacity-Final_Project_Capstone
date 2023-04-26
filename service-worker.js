@@ -1,5 +1,6 @@
 const CACHE_NAME = "travel-app-cache";
-const assetsToCache = ["/", "/index.html", "/styles.css", "/app.js"];
+const assetsToCache = ["/", "/index.html", "/styles/style.css", "/js/app.js"];
+
 
 self.addEventListener("install", (event) => {
   event.waitUntil(

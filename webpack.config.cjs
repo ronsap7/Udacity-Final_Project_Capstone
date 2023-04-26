@@ -2,6 +2,8 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const WriteFilePlugin = require('write-file-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: './src/client/index.js',
@@ -54,5 +56,20 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: 'styles/style.css',
     }),
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: 'service-worker.js', to: 'service-worker.js' },
+      ],
+    }),
+    new WriteFilePlugin(),
   ],
+  devServer: {
+    static: {
+      directory: path.join(__dirname, 'dist'),
+    },
+    historyApiFallback: true,
+    devMiddleware: {
+      writeToDisk: true,
+    },
+  },
 };
