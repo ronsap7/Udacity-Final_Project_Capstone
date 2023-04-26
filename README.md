@@ -1,6 +1,6 @@
 # Travel App Project
 
-#### This is a travel app that allows users to plan their trips by getting weather forecast and destination information. Users can input their desired location and travel dates, and the app will display weather information for the trip as well as a destination image. Users can also add multiple destinations and their corresponding travel dates.
+#### This is a travel app that allows users to plan their trips by getting weather forecast and destination information. Users can input their desired location and travel dates, and the app will display weather information for the trip as well as a destination image. 
 
 # Technologies used
 
