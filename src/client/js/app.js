@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 
-const geonamesBaseUrl = 'http://api.geonames.org/searchJSON';
+const geonamesBaseUrl = 'https://api.geonames.org/searchJSON';
 const geonamesApiKey = 'rhnsapate16';
 
 const weatherbitBaseUrl = 'https://api.weatherbit.io/v2.0/forecast/daily';
